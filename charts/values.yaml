@@ -152,10 +152,17 @@ migrate:
       memory: 512Mi
 
 ingress:
-  enabled: false
-  # ingressClassName: "alb"
-  # namespace: "istio-system"
-  # host: "mydomain.com"
+  # -- enable ingress (true/false)
+  enabled: true
+  # -- ingress classname (alb, nginx, traefik, ...)
+  ingressClassName: traefik
+  # -- enable tls (true/false)
+  tls: false
+  # -- domainlist for the ingress
+  domains: 
+    - name: peekaping.example.com
+  # -- Annotations for the Ingress resource
+  annotations: ~
   # annotations:
   #   alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:000000000000:certificate/my-certificate-arn
   #   alb.ingress.kubernetes.io/healthcheck-path: /healthz/ready
@@ -166,7 +173,9 @@ ingress:
   #   alb.ingress.kubernetes.io/scheme: internal
   #   alb.ingress.kubernetes.io/ssl-redirect: "443"
   #   alb.ingress.kubernetes.io/target-type: ip
-
+  #   cert-manager.io/cluster-issuer: letsencrypt-cluster-issuer
+  #   ingress.kubernetes.io/ssl-redirect: "true"
+  #   nginx.ingress.kubernetes.io/rewrite-target: /
 
 istio:
   ingress:

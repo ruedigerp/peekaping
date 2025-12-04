@@ -16,7 +16,8 @@ metadata:
 spec:
   ingressClassName: {{ .Values.ingress.ingressClassName }}
   rules:
-  - host: {{ .Values.ingress.host }}
+  {{- range $v := .Values.ingress.domains }}
+  - host: {{ $v.name }}
     http:
       paths:
       {{- if not .Values.istio.virtualservice.enabled }}
@@ -51,7 +52,16 @@ spec:
             port:
               number: {{ .Values.istio.ingress.port }}
       {{- end }}
+  {{- end }}
+  {{- if .Values.ingress.tls }}
   tls:
   - hosts:
-    - {{ .Values.ingress.host }}
+    {{- range $v := .Values.ingress.domains }}
+      {{- if $.Values.ingress.tls }}
+    - {{ $v.name }}
+      {{- end }}
+    {{- end }}
+    secretName: {{ .Release.Name }}-tls
+  {{ end }}
+
 {{ end }}
