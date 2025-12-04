@@ -6,10 +6,10 @@ postgresql:
   #   password: peekaping
   #   database: peekaping
 
-redis:
-  enabled: false
-  # auth:
-  #   password: peekaping
+valkey:
+  enabled: true
+  auth:
+    password: ~
 
 # See docs for configuration details
 # https://docs.peekaping.com/architecture/api-server
