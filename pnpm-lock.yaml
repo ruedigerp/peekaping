@@ -204,8 +204,8 @@ importers:
         specifier: ^15.5.3
         version: 15.6.0(i18next@25.3.1(typescript@5.8.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
       react-qr-code:
-        specifier: 2.0.15
-        version: 2.0.15(react@19.1.0)
+        specifier: 2.0.18
+        version: 2.0.18(react@19.1.0)
       react-router-dom:
         specifier: 6.30.0
         version: 6.30.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -7119,8 +7119,8 @@ packages:
       react-loadable: '*'
       webpack: '>=4.41.1 || 5.x'
 
-  react-qr-code@2.0.15:
-    resolution: {integrity: sha512-MkZcjEXqVKqXEIMVE0mbcGgDpkfSdd8zhuzXEl9QzYeNcw8Hq2oVIzDLWuZN2PQBwM5PWjc2S31K8Q1UbcFMfw==}
+  react-qr-code@2.0.18:
+    resolution: {integrity: sha512-v1Jqz7urLMhkO6jkgJuBYhnqvXagzceg3qJUWayuCK/c6LTIonpWbwxR1f1APGd4xrW/QcQEovNrAojbUz65Tg==}
     peerDependencies:
       react: '*'
 
@@ -16871,7 +16871,7 @@ snapshots:
       react-loadable: '@docusaurus/react-loadable@6.0.0(react@19.1.0)'
       webpack: 5.99.9
 
-  react-qr-code@2.0.15(react@19.1.0):
+  react-qr-code@2.0.18(react@19.1.0):
     dependencies:
       prop-types: 15.8.1
       qr.js: 0.0.0
