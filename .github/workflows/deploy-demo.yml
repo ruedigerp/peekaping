@@ -22,7 +22,7 @@ jobs:
       - name: Deploy to Demo Environment
         continue-on-error: ${{ github.event_name == 'workflow_call' }}
         id: deploy
-        uses: appleboy/ssh-action@v1.0.3
+        uses: appleboy/ssh-action@v1.2.4
         with:
           host: ${{ secrets.DEMO_HOST }}
           username: ${{ secrets.DEMO_USERNAME }}
