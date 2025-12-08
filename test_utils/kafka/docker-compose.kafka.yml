@@ -1,6 +1,6 @@
 services:
   zookeeper:
-    image: confluentinc/cp-zookeeper:7.4.0
+    image: confluentinc/cp-zookeeper:7.9.5
     hostname: zookeeper
     container_name: zookeeper
     ports:
@@ -13,7 +13,7 @@ services:
       - zookeeper-logs:/var/lib/zookeeper/log
 
   kafka:
-    image: confluentinc/cp-kafka:7.4.0
+    image: confluentinc/cp-kafka:7.9.5
     hostname: kafka
     container_name: kafka
     depends_on:
@@ -53,7 +53,7 @@ services:
 
   # Optional: Kafka tools for testing (using kafka image with tools)
   kafka-tools:
-    image: confluentinc/cp-kafka:7.4.0
+    image: confluentinc/cp-kafka:7.9.5
     container_name: kafka-tools
     depends_on:
       - kafka

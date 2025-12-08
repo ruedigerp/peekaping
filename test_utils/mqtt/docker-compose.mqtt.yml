@@ -3,7 +3,7 @@ version: '3.8'
 services:
   # MQTT Broker (Eclipse Mosquitto)
   mqtt-broker:
-    image: eclipse-mosquitto:2.0.18
+    image: eclipse-mosquitto:2.0.22
     container_name: mqtt-broker
     ports:
       - "1883:1883"  # MQTT default port
@@ -20,7 +20,7 @@ services:
 
   # MQTT Test Publisher (for testing)
   mqtt-publisher:
-    image: eclipse-mosquitto:2.0.18
+    image: eclipse-mosquitto:2.0.22
     container_name: mqtt-publisher
     depends_on:
       - mqtt-broker
