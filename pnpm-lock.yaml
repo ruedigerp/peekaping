@@ -99,8 +99,8 @@ importers:
   apps/web:
     dependencies:
       '@hey-api/client-axios':
-        specifier: 0.7.0
-        version: 0.7.0(@hey-api/openapi-ts@0.75.0(magicast@0.5.1)(typescript@5.9.3))(axios@1.9.0)
+        specifier: 0.9.1
+        version: 0.9.1(@hey-api/openapi-ts@0.75.0(magicast@0.5.1)(typescript@5.9.3))(axios@1.9.0)
       '@hey-api/openapi-ts':
         specifier: 0.75.0
         version: 0.75.0(magicast@0.5.1)(typescript@5.9.3)
@@ -1686,8 +1686,8 @@ packages:
   '@hapi/topo@5.1.0':
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
 
-  '@hey-api/client-axios@0.7.0':
-    resolution: {integrity: sha512-5pppJabRJbzMnMBwg07GFTM9ZKqEY6gybpCr7KL5Ptxt/6khrVDQebZs63qtap3a77NgJNq3rfstgZljlj89Ug==}
+  '@hey-api/client-axios@0.9.1':
+    resolution: {integrity: sha512-fvpOdnEz6tu5T2+IMNZW3g9mAZwaXavqpsvtapEZNtYxyYtQ+lQs9wJn/VPhZEvdXAXu8HPTCRpmfa0t1aRATA==}
     deprecated: Starting with v0.73.0, this package is bundled directly inside @hey-api/openapi-ts.
     peerDependencies:
       '@hey-api/openapi-ts': < 2
@@ -10477,7 +10477,7 @@ snapshots:
     dependencies:
       '@hapi/hoek': 9.3.0
 
-  '@hey-api/client-axios@0.7.0(@hey-api/openapi-ts@0.75.0(magicast@0.5.1)(typescript@5.9.3))(axios@1.9.0)':
+  '@hey-api/client-axios@0.9.1(@hey-api/openapi-ts@0.75.0(magicast@0.5.1)(typescript@5.9.3))(axios@1.9.0)':
     dependencies:
       '@hey-api/openapi-ts': 0.75.0(magicast@0.5.1)(typescript@5.9.3)
       axios: 1.9.0
