@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@hey-api/client-axios": "0.7.0",
-    "@hey-api/openapi-ts": "0.75.0",
+    "@hey-api/openapi-ts": "0.89.0",
     "@hookform/resolvers": "5.0.1",
     "@radix-ui/react-alert-dialog": "1.1.15",
     "@radix-ui/react-avatar": "1.1.11",
